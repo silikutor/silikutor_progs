@@ -49,7 +49,7 @@ void write(char **lines, int nLines)
   int i;
   for (i = nLines-1; i >= 0; --i)  /* sorok */
   {
-    fprintf(stdout, "%d. %s:\n", i+1, strrev(lines[i]));    
+    fprintf(stdout, "%d %s\n", i+1, strrev(lines[i]));    
   }
   free(lines);
 }	
